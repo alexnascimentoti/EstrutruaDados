@@ -35,7 +35,8 @@ public class VisualizadorFrame extends JFrame {
         String[] estruturas = {
             "Array (Lista Dinâmica)", 
             "Lista Ligada (Simples)", 
-            "Lista Duplamente Encadeada" };
+            "Lista Duplamente Encadeada",
+            "Pilha" };
         seletorDeEstrutura = new JComboBox<>(estruturas);
         painelSuperior.add(seletorDeEstrutura);
 
@@ -52,6 +53,7 @@ public class VisualizadorFrame extends JFrame {
         // painelDeVisualizacao.add(new FilaPanel(), "Fila (Queue)");
         painelDeVisualizacao.add(new ListaLigadaPanel(), "Lista Ligada (Simples)");
         painelDeVisualizacao.add(new ListaDuplamenteEncadeadaPanel(), "Lista Duplamente Encadeada");
+        painelDeVisualizacao.add(new PilhaSwingApp(), "Pilha");
 
         add(painelDeVisualizacao, BorderLayout.CENTER);
 
