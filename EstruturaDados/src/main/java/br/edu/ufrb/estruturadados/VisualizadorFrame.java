@@ -37,6 +37,7 @@ public class VisualizadorFrame extends JFrame {
             "Lista Ligada (Simples)", 
             "Lista Duplamente Encadeada",
             "Pilha",
+            "Fila",
             "Métodos de Ordenação",
         };
         seletorDeEstrutura = new JComboBox<>(estruturas);
@@ -56,6 +57,7 @@ public class VisualizadorFrame extends JFrame {
         painelDeVisualizacao.add(new ListaLigadaPanel(), "Lista Ligada (Simples)");
         painelDeVisualizacao.add(new ListaDuplamenteEncadeadaPanel(), "Lista Duplamente Encadeada");
         painelDeVisualizacao.add(new PilhaSwingApp(), "Pilha");
+        painelDeVisualizacao.add(new FilaSwingApp(), "Fila");
         painelDeVisualizacao.add(new OrdenacaoPanel(), "Métodos de Ordenação");
 
         add(painelDeVisualizacao, BorderLayout.CENTER);
