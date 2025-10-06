@@ -5,7 +5,7 @@ import java.awt.*;
 
 /**
  * Implementação da Fila (Queue) FIFO
- * @author MSCF
+ * @author OLS
  */
 public class FilaSwingApp extends JPanel {
 
@@ -115,7 +115,7 @@ public class FilaSwingApp extends JPanel {
     private class VisualizacaoPanel extends JPanel {
         private static final int NODE_WIDTH = 100;
         private static final int NODE_HEIGHT = 40;
-        private static final int H_GAP = 10; // Espaçamento horizontal
+        private static final int H_GAP = 10;
 
         @Override
         protected void paintComponent(Graphics g) {

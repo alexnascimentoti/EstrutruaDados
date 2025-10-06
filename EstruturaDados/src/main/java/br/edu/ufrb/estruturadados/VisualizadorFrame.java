@@ -39,6 +39,7 @@ public class VisualizadorFrame extends JFrame {
             "Pilha",
             "Fila",
             "Métodos de Ordenação",
+            "Busca Binária",
         };
         seletorDeEstrutura = new JComboBox<>(estruturas);
         painelSuperior.add(seletorDeEstrutura);
@@ -59,6 +60,8 @@ public class VisualizadorFrame extends JFrame {
         painelDeVisualizacao.add(new PilhaSwingApp(), "Pilha");
         painelDeVisualizacao.add(new FilaSwingApp(), "Fila");
         painelDeVisualizacao.add(new OrdenacaoPanel(), "Métodos de Ordenação");
+        painelDeVisualizacao.add(new BuscaBinariaPanel(), "Busca Binária");
+
 
         add(painelDeVisualizacao, BorderLayout.CENTER);
 
