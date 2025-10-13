@@ -38,6 +38,7 @@ public class VisualizadorFrame extends JFrame {
             "Lista Duplamente Encadeada",
             "Pilha",
             "Fila",
+            "Árvore Binária Não Ordenada",
             "Métodos de Ordenação",
             "Busca Binária",
         };
@@ -59,6 +60,7 @@ public class VisualizadorFrame extends JFrame {
         painelDeVisualizacao.add(new ListaDuplamenteEncadeadaPanel(), "Lista Duplamente Encadeada");
         painelDeVisualizacao.add(new PilhaSwingApp(), "Pilha");
         painelDeVisualizacao.add(new FilaSwingApp(), "Fila");
+        painelDeVisualizacao.add(new ArvoreBinariaNaoOrdenadaPanel(), "Árvore Binária Não Ordenada");
         painelDeVisualizacao.add(new OrdenacaoPanel(), "Métodos de Ordenação");
         painelDeVisualizacao.add(new BuscaBinariaPanel(), "Busca Binária");
 
