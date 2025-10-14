@@ -38,9 +38,10 @@ public class VisualizadorFrame extends JFrame {
             "Lista Duplamente Encadeada",
             "Pilha",
             "Fila",
-            "Árvore Binária Não Ordenada",
             "Métodos de Ordenação",
             "Busca Binária",
+            "Árvore Binária Não Ordenada",
+            "Árvore Binária de Busca - Não balanceada" 
         };
         seletorDeEstrutura = new JComboBox<>(estruturas);
         painelSuperior.add(seletorDeEstrutura);
@@ -53,16 +54,15 @@ public class VisualizadorFrame extends JFrame {
 
         // Adiciona os painéis de cada estrutura
         painelDeVisualizacao.add(new ArrayPanel(), "Array (Lista Dinâmica)");
-        //painelDeVisualizacao.add(new PilhaPanel(), "Pilha (Stack)");
-        // Adicione aqui os outros painéis quando criá-los
-        // painelDeVisualizacao.add(new FilaPanel(), "Fila (Queue)");
         painelDeVisualizacao.add(new ListaLigadaPanel(), "Lista Ligada (Simples)");
         painelDeVisualizacao.add(new ListaDuplamenteEncadeadaPanel(), "Lista Duplamente Encadeada");
         painelDeVisualizacao.add(new PilhaSwingApp(), "Pilha");
         painelDeVisualizacao.add(new FilaSwingApp(), "Fila");
-        painelDeVisualizacao.add(new ArvoreBinariaNaoOrdenadaPanel(), "Árvore Binária Não Ordenada");
         painelDeVisualizacao.add(new OrdenacaoPanel(), "Métodos de Ordenação");
         painelDeVisualizacao.add(new BuscaBinariaPanel(), "Busca Binária");
+        painelDeVisualizacao.add(new ArvoreBinariaNaoOrdenadaPanel(), "Árvore Binária Não Ordenada");
+        painelDeVisualizacao.add(new ArvoreBinariaNaoBalanceadaPanel(), "Árvore Binária de Busca - Não balanceada");
+
 
 
         add(painelDeVisualizacao, BorderLayout.CENTER);
