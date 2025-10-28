@@ -41,7 +41,8 @@ public class VisualizadorFrame extends JFrame {
             "Métodos de Ordenação",
             "Busca Binária",
             "Árvore Binária Não Ordenada",
-            "Árvore Binária de Busca - Não balanceada" 
+            "Árvore Binária de Busca (Não Balanceada)",
+            "Hash Map Simples (Tabela Hash)"
         };
         seletorDeEstrutura = new JComboBox<>(estruturas);
         painelSuperior.add(seletorDeEstrutura);
@@ -61,9 +62,8 @@ public class VisualizadorFrame extends JFrame {
         painelDeVisualizacao.add(new OrdenacaoPanel(), "Métodos de Ordenação");
         painelDeVisualizacao.add(new BuscaBinariaPanel(), "Busca Binária");
         painelDeVisualizacao.add(new ArvoreBinariaNaoOrdenadaPanel(), "Árvore Binária Não Ordenada");
-        painelDeVisualizacao.add(new ArvoreBinariaNaoBalanceadaPanel(), "Árvore Binária de Busca - Não balanceada");
-
-
+        painelDeVisualizacao.add(new ArvoreBinariaNaoBalanceadaPanel(), "Árvore Binária de Busca (Não Balanceada)");
+        painelDeVisualizacao.add(new HashMapPanel(), "Hash Map Simples (Tabela Hash)");
 
         add(painelDeVisualizacao, BorderLayout.CENTER);
 
